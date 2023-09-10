@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Forum</title>
+  <link rel="stylesheet" href="css/community_style.css">
+  <link rel="website icon" type="png" href="img/logo.png">
+</head>
+<body>
+    <header>
+        <h1>AgriTech Platform</h1>
+        <img src="img/logo.png" width="60">
+    </header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Community Forum</a></li>
+            <!-- Add more navigation links here -->
+          </ul>
+        </nav>
+   
+  <main>
+    <section class="forum-section">
+      <h2>Post a New Topic</h2>
+      <form id="post-form">
+        <label for="post-title">Title:</label>
+        <input type="text" id="post-title" required>
+        <label for="post-content">Content:</label>
+        <textarea id="post-content" rows="5" required></textarea>
+        <button type="submit">Post</button>
+      </form>
+    </section>
+    <section class="forum-section">
+      <h2>Recent Posts</h2>
+      <div id="posts-list">
+        <!-- Posts will be displayed here -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 AgriTech Platform. All rights reserved. and created by Soumyaa</p>
+  </footer>
+  <script src="js/community_script.js"></script>
+</body>
+</html>

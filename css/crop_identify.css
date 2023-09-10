@@ -1,0 +1,59 @@
+/* Upload section styles */
+#upload-section {
+    text-align: center;
+    padding: 20px;
+    background-color: aliceblue;
+    border-bottom: 1px solid rgb(238, 213, 213);
+}
+
+
+
+#diagnose-button {
+    background-color: #4caf50;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#diagnose-button:hover {
+    background-color: #45a049;
+}
+
+/* Result section styles */
+#result-section {
+    text-align: center;
+    background-color: rgb(241, 255, 241);    
+    padding: 20px;
+}
+
+#diagnosis-result {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#get-expert-advice {
+    background-color: #007bff;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#get-expert-advice:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Add a smooth transition for all elements */
+* {
+    transition: all 0.3s ease;
+}
+main{
+    background-color: rgb(255, 248, 235);
+}

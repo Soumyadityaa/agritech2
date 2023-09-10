@@ -1,0 +1,150 @@
+h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+
+  section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .data-display p,
+  .product-list ul,
+  .knowledge-hub ul {
+    margin-top: 0.5rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #34495e;
+    color: white;
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+/* Add your CSS styling here */
+
+/* Style for crop items */
+.crop-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .crop-item h3 {
+    margin-bottom: 1rem;
+    color: #3498db;
+  }
+  
+  .crop-item p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .delete-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .delete-button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Animation for adding a new crop */
+  @keyframes fadeInFromBottom {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .add-crop-form {
+    animation: fadeInFromBottom 0.6s ease-in-out;
+  }
+  
+  /* Animation for deleting a crop */
+  @keyframes slideOutToLeft {
+    to {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes slideOutToRight {
+    to {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+  }
+  
+  .slide-out-left {
+    animation: slideOutToLeft 0.3s ease-in-out forwards;
+  }
+  
+  .slide-out-right {
+    animation: slideOutToRight 0.3s ease-in-out forwards;
+  }
+  
+ 
+
+  .add_form {
+    text-align: left;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .add_form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .add_form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+  }
+  
+  .add_form button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .add_form button:hover {
+    background-color: #555;
+  }

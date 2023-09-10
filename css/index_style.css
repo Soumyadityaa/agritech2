@@ -1,0 +1,307 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for header and navbar */
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #007BFF, #44c7f5);
+    color: #ffffff;
+    padding: 20px;
+}
+header h1 {
+    font-size: 2.5rem;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/*  For Nav bar */
+.navbar {
+    background-color: #094c94;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+.navbar li {
+    display: inline;
+    margin: 0 10px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.navbar a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.background-image{
+    max-width: 100%;
+    overflow: hidden;
+}
+.landscape-photo {
+    width: 100%;
+
+    height: 480px;
+    display: block;
+}
+
+/* for ntification bar */
+.notification-box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    height: 300px;
+    width: 280px;
+    position: absolute;
+    top: 35.5%;
+    left: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-color: #094c94;
+    transition: transform 0.3s ease; 
+}
+.notification-box:hover {
+    transform: scale(1.05); 
+}
+
+
+/* For User Box*/
+.user-box {
+    position:absolute;
+    top: 35.5%;;
+    right: 0;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow to the box */
+}
+
+
+/* Style for the admin and user buttons */
+.user-box button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+/* Style for button hover effect */
+
+.user-box button:hover {
+   transform: scale(1.05);
+}
+
+/* Separat  notifiction ann map part */
+.separator {
+    border-top: 3px solid #000; 
+    
+    width: 98%;
+    background-image: url('/img/background.jpg')
+}
+/*Naming of map */
+.map{
+   padding-left: 20px;
+}
+.map-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    background-color: #f7fdff;
+}
+
+.image-section {
+    flex: 1;
+    width: 100%;
+    max-width: 510px;
+    text-align: center;
+}
+
+
+.image {
+    max-width: 70%;
+    height: auto;
+}
+
+.Year{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+/* for Map and farmer pART*/
+.box1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*  map part  where put the map */
+.map-box {
+    display: flex;
+   position: relative;
+    margin: 20px;
+    padding: -10px;
+    /* border: 2px solid rgb(255, 247, 248); */
+    border-radius: 10px;
+    width: 40%;
+    height: 510px;
+    background-color: #f7fdff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+}
+.map-box:hover {
+    transform: scale(1.03); 
+}
+
+/* Style for the map section */
+.map-section {
+    margin-top: 300px;
+    text-align: center; /* Center-align the map section */
+}
+/* Style for the map heading */
+.map-section h2 {
+    font-size: 24px; 
+}
+.map-section iframe {
+    width: 200%;
+    max-width: 800px; 
+    height: 100px; 
+    border: 1px solid #ccc; /* Add a border around the map */
+}
+/* Farmer corner */
+.section{
+    margin: 20px;
+    padding: 20px;
+    /* border: 2px solid rgb(255, 247, 248); */
+    border-radius: 10px;
+    background: linear-gradient(45deg, #00FF00, #008000);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+    width: 50%;
+
+}
+/* menu in Farmer corner */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.section-part{
+    flex: 1;
+    font-size: 20px;
+    display: block;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    max-width: 200px;
+}
+.section-part:hover{
+    transform: scale(1.05); /* Scale up when hovered */
+    transition: transform 0.3s ease; /* Smooth transition */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* scheme and links */
+.info {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #00A2E8, #3F48CC);
+    padding: 20px;
+    color: #fff; /* Set text color to make it visible on the gradient background */
+  }
+/* selection part */
+.scheme1{
+    position: relative;
+    margin: 10px;
+    padding-left: -10px;
+    border: 2px solid rgb(255, 247, 248);
+    width: 80%;
+    height:400px;
+    background-color: #fcfcfc;
+}
+.scheme1 h2 {
+    font-size: 24px; 
+    color: #333; 
+    padding: 10px;
+    border-bottom: 2px solid #0800fb;
+  }
+.scheme1 ul{
+    font-size: 19px; 
+    color: #333;
+    padding: 10px 20px;
+}  
+
+/*box 2 means useful link */
+.box2{
+    position: relative;
+    margin: 10px;
+    padding-left: -10px;
+    border: 2px solid rgb(255, 247, 248);
+    width: 50%;
+    height:400px;
+    background-color: #ffffff;
+}
+.box2 h2 {
+    font-size: 24px; 
+    color: #333; 
+    padding: 10px;
+    border-bottom: 2px solid #0800fb;
+    
+  }
+
+
+  /* For About section*/
+.box3{
+    display: flex;
+    background-color: #007BFF;
+}
+.section-part3{
+    display: flex;
+    justify-content: center;
+    flex: 5;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 10px;
+    height: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    max-width: 300px;
+}
+.section-part3:hover{
+    transform: scale(1.05); /* Scale up when hovered */
+    transition: transform 0.3s ease; /* Smooth transition */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+
+
+  

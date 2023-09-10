@@ -1,0 +1,76 @@
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .data-display p,
+  .product-list ul,
+  .knowledge-hub ul {
+    margin-top: 0.5rem;
+  }
+  
+
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+/* Add your CSS styling here */
+
+/* Style for product items */
+.product-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: #effaf4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-item h3 {
+    margin-bottom: 1rem;
+    color: #3498db;
+  }
+  
+  .product-item p {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Style for product details */
+  #product-details {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #ffe1e1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #product-details h3 {
+    margin-bottom: 1rem;
+    color: #3498db;
+  }
+  
+  #product-details p {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
